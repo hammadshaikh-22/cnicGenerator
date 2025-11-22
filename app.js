@@ -65,10 +65,19 @@ function submit(){
     if(contact.value == 0){
         contactError.innerText = "Please enter your contact number"
     }
-    else if(contact.value != 11){
+    else if(contact.value.toString().length != 11){
         contactError.innerText = "Contact number must be of 11 numbers"
     }
     else{
         contactError.innerText = ""
     }
+
+    //CNIC Generation
+    var cnicc = Math.random()
+    // console.log(cnicc)
+
+
+    // if(contactError.innerText == "" && ageError.innerText == "" && passwordError.innerText == "" && emailError.innerText == "" &&userNameError.innerText == ""){
+    //     cnic.value == Math.random(100000000000)
+    // }
 }
