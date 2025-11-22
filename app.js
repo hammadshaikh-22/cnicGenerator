@@ -91,7 +91,11 @@ function submit(){
     //CNIC Generation
 
     if (hasError == false){
-        
+        var cnicNo = (Math.random()*10000000000000).toFixed()
+        cnicNo = cnic.toString().substring(0,4)+"-"+ cnic.toString().substring(4,12)+"-"+cnic.toString().substring(12,13)
+        // console.log(cnic)
+        cnic.value = cnicNo
+
     }
     
 
