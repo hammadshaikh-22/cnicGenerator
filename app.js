@@ -74,7 +74,7 @@ function submit(){
 
     //CNIC Generation
     var cnicc = Math.random()
-    // console.log(cnicc)
+    console.log(cnicc)
 
 
     // if(contactError.innerText == "" && ageError.innerText == "" && passwordError.innerText == "" && emailError.innerText == "" &&userNameError.innerText == ""){
