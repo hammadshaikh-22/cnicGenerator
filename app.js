@@ -77,7 +77,7 @@ function submit(){
     console.log(cnicc)
 
 
-    // if(contactError.innerText == "" && ageError.innerText == "" && passwordError.innerText == "" && emailError.innerText == "" &&userNameError.innerText == ""){
-    //     cnic.value == Math.random(100000000000)
-    // }
+    if(contactError.innerText == "" && ageError.innerText == "" && passwordError.innerText == "" && emailError.innerText == "" &&userNameError.innerText == ""){
+        cnic.value == Math.random(100000000000)
+    }
 }
