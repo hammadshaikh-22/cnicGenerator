@@ -12,72 +12,87 @@ var ageError = document.getElementById('ageError')
 var contactError = document.getElementById('contactError')
 
 function submit(){
+    var hasError = false
 
     //Name validation
 
     if (userName.value == ""){
         userNameError.innerText = 'Please enter your name.'
+        hasError = true
     }
     else if(userName.value.length < 5){
         userNameError.innerText = "Username must be greater than 5 letters."
+        hasError = true
     }
     else{
         userNameError.innerText = ""
+        hasError = false
     }
 
     //Email validation
 
     if (email.value == ""){
         emailError.innerText = "Please enter your email address."
+        hasError = true
     }
     else if(!email.value.includes("@")){
         emailError.innerText = "Enter correct email address."
+        hasError = true
     }
     else{
         emailError.innerText = ""
+        hasError = false
     }
 
     //Password validation
 
     if(password.value == ""){
         passwordError.innerText = "Please enter a password"
+        hasError = true
     }
     else if(password.value.length < 8){
         passwordError.innerText = "Password must be greater than or equal to 8 characters"
+        hasError = true
     }
     else{
         passwordError.innerText = ""
+        hasError = false
     }
 
     //Age error
     if(age.value == 0){
         ageError.innerText = "Please enter your age"
+        hasError = true
     }
     else if(age.value < 18){
         ageError.innerText = "Your age must be greater than 18 to be eligible for cnic"
+        hasError = true
     }
     else{
         ageError.innerText = ""
+        hasError = false
     }
 
     //contact validation
 
     if(contact.value == 0){
         contactError.innerText = "Please enter your contact number"
+        hasError = true
     }
     else if(contact.value.toString().length != 11){
         contactError.innerText = "Contact number must be of 11 numbers"
+        hasError = true
     }
     else{
         contactError.innerText = ""
+        hasError = false
     }
 
     //CNIC Generation
-    var cnicc = Math.random()
-    console.log(cnicc)
 
-
-    if(contactError.innerText == "" && ageError.innerText == "" && passwordError.innerText == "" && emailError.innerText == "" &&userNameError.innerText == ""){
-        cnic.value == Math.random(100000000000)
+    if (hasError == false){
+        
     }
+    
+
 }
