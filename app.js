@@ -5,11 +5,11 @@ var age = document.getElementById('age')
 var contact = document.getElementById('contact')
 var cnic = document.getElementById('cnic')
 
-var userNameError = document.getElementById('nameError')
-var emailError = document.getElementById('emailError')
-var passwordError = document.getElementById('passwordError')
-var ageError = document.getElementById('ageError')
-var contactError = document.getElementById('contactError')
+//var userNameError = document.getElementById('nameError')
+//var emailError = document.getElementById('emailError')
+//var passwordError = document.getElementById('passwordError')
+//var ageError = document.getElementById('ageError')
+//var contactError = document.getElementById('contactError')
 
 function submit(){
     var hasError = false
